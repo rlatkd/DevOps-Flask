@@ -5,6 +5,10 @@ cd   /home/ubuntu/ssgbay
 echo ">>> pip install ----------------------"
 pip install -r requirements.txt
 
+echo ">>> npm install ----------------------"
+npm install
+npm run build
+
 echo ">>> remove template files ------------"
 rm -rf appspec.yml requirements.txt
 
