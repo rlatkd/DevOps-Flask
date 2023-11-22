@@ -2,8 +2,6 @@
 
 cd   /home/ubuntu/ssgbay
 
-sudo apt-get install python3-pip
-
 echo ">>> pip install ----------------------"
 pip install -r requirements.txt
 
