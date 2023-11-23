@@ -8,7 +8,7 @@ import pymysql
 
 
 connectionString = {
-    'host': 'mysql',
+    'host': 'database-1.cyu7qnoubf3u.ap-northeast-2.rds.amazonaws.com',
     'port': 3306,
     'database': 'auction',
     'user': 'rlatkdMySQL',
