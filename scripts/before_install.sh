@@ -12,4 +12,3 @@ fi
 
 rm -rf /home/ubuntu/ssgbay
 mkdir  /home/ubuntu/ssgbay
-mkdir  /home/ubuntu/ssgbay/resources
