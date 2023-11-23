@@ -5,6 +5,8 @@ cd   /home/ubuntu/ssgbay
 echo ">>> pip install ----------------------"
 pip install -r requirements.txt
 
+RUN crontab -l | { cat; echo "* * * * * /usr/local/bin/python /app/historyUpdate.py >> /var/log/cron.log 2>&1"; } | crontab -
+
 echo ">>> npm install ----------------------"
 npm install
 npm run build
