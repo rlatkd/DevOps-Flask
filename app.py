@@ -7,9 +7,9 @@ from flask_jwt_extended import create_access_token
 import os
 
 app = Flask(__name__, static_folder='./resources/')
-app.config["JWT_SECRET_KEY"] = "super-secret"
 UPLOAD_FOLDER = path.join('.', 'resources/')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config["JWT_SECRET_KEY"] = "super-secret"
 jwt = JWTManager(app)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
