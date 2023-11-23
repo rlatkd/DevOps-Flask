@@ -11,8 +11,8 @@ connectionString = {
     'host': 'mysql',
     'port': 3306,
     'database': 'auction',
-    'user': 'user1',
-    'password': '1234',
+    'user': 'rlatkdMySQL',
+    'password': '!wl1075337',
     'charset': 'utf8',
     'cursorclass': pymysql.cursors.DictCursor
 }
