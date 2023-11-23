@@ -8,11 +8,11 @@ import pymysql
 
 
 connectionString = {
-    'host': 'database-1.cyu7qnoubf3u.ap-northeast-2.rds.amazonaws.com',
+    'host': 'mysql',
     'port': 3306,
     'database': 'auction',
-    'user': 'rlatkdMySQL',
-    'password': '!wl1075337',
+    'user': 'user1',
+    'password': '1234',
     'charset': 'utf8',
     'cursorclass': pymysql.cursors.DictCursor
 }
