@@ -6,7 +6,7 @@ from flask_jwt_extended import JWTManager
 from flask_jwt_extended import create_access_token
 import os
 
-app = Flask(__name__, static_folder='./resources/')
+app = Flask(__name__, static_folder='http://43.202.66.215:5000/resources/')
 app.config["JWT_SECRET_KEY"] = "super-secret"
 UPLOAD_FOLDER = path.join('.', 'resources/')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -127,7 +127,7 @@ def create():
         userId = request.form.get('userId')
         endTime = request.form.get('endTime')
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
-        image_url = './resources/' + file.filename
+        image_url = 'http://43.202.66.215:5000/resources/' + file.filename
         print(image_url)
         return database.addItemInfo( itemName, itemContent, itemPrice, image_url, endTime, userId)
               
