@@ -6,10 +6,10 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: scripts/before_install.sh
+    - location: scripts/beforeInstall.sh
       runas: root
   AfterInstall:
-    - location: scripts/after_install.sh
+    - location: scripts/afterInstall.sh
       runas: root
-    - location: scripts/run_flask.sh
+    - location: scripts/runServer.sh
       runas: ubuntu
