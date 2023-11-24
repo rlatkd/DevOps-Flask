@@ -2,6 +2,10 @@
 
 cd   /home/ubuntu/ssgbay
 
+mkdir resources
+
+ls -al
+
 echo ">>> pip install ----------------------"
 pip install -r requirements.txt
 
