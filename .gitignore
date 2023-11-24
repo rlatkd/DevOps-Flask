@@ -1,4 +1,1 @@
 .venv
-
-# keep the folder by keeping .gitkeep file
-!resources/.gitkeep
