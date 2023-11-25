@@ -6,6 +6,8 @@ from flask_jwt_extended import JWTManager
 from flask_jwt_extended import create_access_token
 import os
 
+1
+
 app = Flask(__name__, static_folder='./resources/')
 UPLOAD_FOLDER = path.join('.', 'resources/')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
