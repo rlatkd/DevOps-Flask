@@ -16,7 +16,7 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/')
 def test():
-    return "testv1"
+    return "testv2"
 
 @app.route('/', methods=['GET'])
 def main():
