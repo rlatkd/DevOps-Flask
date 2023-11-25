@@ -14,9 +14,6 @@ jwt = JWTManager(app)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
-@app.route('/')
-def test():
-    return "testv1"
 
 @app.route('/', methods=['GET'])
 def main():
