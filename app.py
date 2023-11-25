@@ -14,6 +14,10 @@ jwt = JWTManager(app)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
+@app.route('/')
+def test():
+    return "test"
+
 @app.route('/', methods=['GET'])
 def main():
     sort = request.args.get('sort')
